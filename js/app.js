@@ -194,13 +194,14 @@ document.querySelector('#comprar').addEventListener('click', () => {
 
 
 //Fetch
-var responseClone;
-const getProducto = async () => {
-    const response = await fetch('../data/productos.json')
-    const data = await response.json()
-    producto = data
-    renderizarProducto(producto)
-    renderizarCarrito()
+const getProducto = () =>{
+    fetch('../data/productos.json')
+    .then(response => response.json())
+    .then((data) => {
+        producto = data;
+        renderizarProducto(producto)
+        renderizarCarrito()
+    });
 }
 
 // Inicio
