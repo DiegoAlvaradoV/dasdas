@@ -195,7 +195,7 @@
 
 const fetchData = async () => {
     try{
-        const res = await fetch('../data/prueba.json');
+        const res = await fetch('prueba.json');
         const data = await res.json();
         console.log(data)
     } catch (error){
