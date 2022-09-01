@@ -198,7 +198,7 @@ const getProducto = () =>{
     fetch('../data/productos.json')
     .then(response => response.json())
     .then((data) => {
-        producto = data;
+        producto = [data];
         renderizarProducto(producto)
         renderizarCarrito()
     });
