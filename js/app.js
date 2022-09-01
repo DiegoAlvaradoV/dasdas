@@ -193,31 +193,18 @@
 // })
 
 
-//Fetch
-const getProducto = () =>{
-    fetch('../data/productos.json')
-    .then(response => response.json())
-    .then((data) => {
-        producto = [data];
-        console.log(producto)
-        // renderizarProducto(producto)
-        // renderizarCarrito()
-    });
+const fetchData = async () => {
+    try{
+        const res = await fetch('../data/prueba.json');
+        const data = await res.json();
+        console.log(data)
+    } catch (error){
+        //EN CASO DE PRESENTARSE UN ERROR, SE MUESTRA UN MENSAJE Y SE ACTUALIZA LA PÁGINA
+        console.log("das")
+    }
 }
 
-const getProductoP = () =>{
-    fetch('../data/prueba.json')
-    .then(response => response.json())
-    .then((data) => {
-        producto = [data];
-        console.log(producto)
-        // renderizarProducto(producto)
-        // renderizarCarrito()
-    });
-}
-
-getProductoP();
-getProducto()
+fetchData();
 
 
 // // Inicio
