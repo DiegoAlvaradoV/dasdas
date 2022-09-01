@@ -205,7 +205,20 @@ const getProducto = () =>{
     });
 }
 
+const getProductoP = () =>{
+    fetch('../data/prueba.json')
+    .then(response => response.json())
+    .then((data) => {
+        producto = [data];
+        console.log(producto)
+        // renderizarProducto(producto)
+        // renderizarCarrito()
+    });
+}
+
+getProductoP();
 getProducto()
+
 
 // // Inicio
 // cargarCarritoDeLocalStorage();

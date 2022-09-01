@@ -1,8 +1,7 @@
 
-    {   "id": 1,
-        "modelo": "Arco Iris",
-        "medidas":"5 unidades-15cm x 10cm.",
-        "imagen": "src=./img/arcoiris.jpeg",
-        "precio": 3500
-        
-    }
+{   "id": 1,
+    "modelo": "Arco Iris",
+    "medidas":"5 unidades-15cm x 10cm.",
+    "imagen": "src=./img/arcoiris.jpeg",
+    "precio": 3500     
+}
